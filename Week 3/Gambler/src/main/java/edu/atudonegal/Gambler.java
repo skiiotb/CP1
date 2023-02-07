@@ -16,12 +16,12 @@ import java.util.concurrent.ThreadLocalRandom;
  */
 public class Gambler {
 
-  /**
-   * The main entry point of the application.
-   *
-   * @param args program input arguments - not used.
-   */
-  public static void main(String[] args) {
+  /** 
+   * The main entry point of the application. 
+   * 
+   * @param args program input arguments - not used .
+   */ 
+  public static void main(String[] args) { 
 
     int bets = 0;
     int gameWins = 0;
@@ -38,6 +38,20 @@ public class Gambler {
       // Game logic
       while (pot > 0 && pot < goal) {
         // TO DO - Implement game logic
+        int thr1 = simulateThrow();
+        int thr2 = simulateThrow();
+        if(thr1 + thr2 < 6){
+          pot++;
+          System.out.println("Win! You rolled a " +thr1+" and a "+thr2);
+          System.out.println("New pot: "+pot);
+        }
+
+        else{
+          pot = pot - 1;
+          System.out.println("Loss! You rolled a " +thr1+" and a "+thr2);
+          System.out.println("New pot: "+pot);
+        }
+        bets++;
 
       }
       if (pot == goal) {
