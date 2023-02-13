@@ -28,6 +28,13 @@ public final class Enigma {
         // 2. Apply the CAESAR shift
         // 3. Return the decrypted string
 
+        trim(message);
+
+        for(int i=0 i<26; i++)
+        {
+            
+        }
+
         return "Implement the decrypt";
 
     }
