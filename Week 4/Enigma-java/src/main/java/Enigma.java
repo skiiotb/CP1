@@ -31,4 +31,8 @@ public final class Enigma {
         return "Implement the decrypt";
 
     }
+
+    public void empty(){
+
+    }
 }
