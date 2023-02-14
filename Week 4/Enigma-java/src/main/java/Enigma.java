@@ -28,11 +28,15 @@ public final class Enigma {
         // 2. Apply the CAESAR shift
         // 3. Return the decrypted string
 
-        trim(message);
+        /*
+        1. turn message to ascii
+        2. turn last rotor to ascii
+        3. make int
+        */
 
-        for(int i=0 i<26; i++)
+        for(int i=0; i<message.length(); i++)
         {
-            
+
         }
 
         return "Implement the decrypt";
